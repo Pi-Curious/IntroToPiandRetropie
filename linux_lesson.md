@@ -1,13 +1,29 @@
-## Change password
-	`$ passwd`
 
 ## Configure RaspberryPi
-	`$ raspi-config `
-		change hostname
-		change locale
-			en_US.UTF-8
-		expand partitions to full sd card
-	reboot
+
+First thing is first, we need to configure the pi. We do this with the command `$ sudo raspi-config` We need to change the following items
+
+* password
+* hostname
+* locale
+* keyboard layout
+* en_US.UTF-8
+* expand partitions to full sd card
+
+#### Password
+Select password and change it to something you will not forget because you can get locked out of your system
+
+#### Hostname
+The hostname is the name of the device on the network. Right now your raspberry pi is named `raspberrypi` to make each device easier to identify give it a unique name
+
+#### Locale
+Your RaspberryPi thinks it is living in England. We must remind it that it is in America now. 
+> process goes in here in the morning
+
+
+
+
+lly reboot after you close out of the menu
 
 ## Install packages
 	example htop
