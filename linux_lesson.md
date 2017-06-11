@@ -1,3 +1,5 @@
+# Intro to Linux
+The goal of this lesson is to learn the basics of the linux command line. A lot of the time, especally with hardware related projects, your RaspberryPi will be running in a headless mode. If your goal is to run a system like this it is critical to become comfortable with linux command line. This lesson will just begin to scratch the surface of what can be done with a linux shell.
 
 ## Configure RaspberryPi
 
@@ -7,8 +9,7 @@ First thing is first, we need to configure the pi. We do this with the command `
 * hostname
 * locale
 * keyboard layout
-* en_US.UTF-8
-* expand partitions to full sd card
+* expand partitions to full size of the sd card 
 
 #### Password
 Select password and change it to something you will not forget because you can get locked out of your system
@@ -20,12 +21,22 @@ The hostname is the name of the device on the network. Right now your raspberry 
 Your RaspberryPi thinks it is living in England. We must remind it that it is in America now. 
 > process goes in here in the morning
 
+#### Keyboard Layout
+The English use a slightly different keyboard layout than ours. Lets go fix that
+```
+Select 104 key keyboard then procede to the next screen
+scroll and select other, find United States and select generic keyboard and move on
+```
+
+#### Expand partitions to full size of the sd card 
+Rasbian does not take up the full sd card and only adds a small part of it to its partitions to fix that goto **advanced** and select **Ill look in the morning**
+
+#### Wrapping up configuration
+Exit the menu and reboot if it asks you. If it doesn't ask you `$ sudo reboot now` just to be safe
 
 
-
-lly reboot after you close out of the menu
-
-## Install packages
+## Installing packages
+	
 	example htop
 	`$ sudo apt-get install htop`
 	show demo of htop
