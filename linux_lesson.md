@@ -5,21 +5,21 @@ The goal of this lesson is to learn the basics of the linux command line. A lot 
  
 First thing is first, we need to configure the pi. We do this with the command `$ sudo raspi-config` We need to change the following items
  
-* password
-* hostname
-* locale
-* keyboard layout
-* expand partitions to full size of the sd card 
+* Password
+* Hostname
+* Localisation
+* Keyboard Layout
+* Expand Filesystems 
  
 #### Password
-Select password and change it to something you will not forget because you can get locked out of your system
+Select **1 Change User Password** and change it to something you will not forget because you can get locked out of your system
  
 #### Hostname
-The hostname is the name of the device on the network. Right now your raspberry pi is named `raspberrypi` to make each device easier to identify give it a unique name
+The hostname is the name of the device on the network. Right now your raspberry pi is named `raspberrypi` to make each device easier to identify give it a unique name. Select **2 Hostname** and enter a new name for you pi.
  
-#### Locale
+#### Localisation
 Your RaspberryPi thinks it is living in England. We must remind it that it is in America now. 
-> process goes in here in the morning
+Select **4 Localisation Options** and then **I1 Change Locale**
  
 #### Keyboard Layout
 The English use a slightly different keyboard layout than ours. Let's go fix that
@@ -28,8 +28,8 @@ Select 104 key keyboard then proceed to the next screen
 scroll and select other, find United States and select generic keyboard and move on
 ```
  
-#### Expand partitions to full size of the sd card 
-Rasbian does not take up the full sd card and only adds a small part of it to its partitions to fix that goto **advanced** and select **Ill look in the morning**
+#### Expand Filesystems 
+Rasbian does not take up the full sd card and only adds a small part of it to its partitions to fix that goto **7 Advanced Options** and select **A1 Expand Filesystems**
  
 #### Wrapping up configuration
 Exit the menu and reboot if it asks you. If it doesn't ask you `$ sudo reboot now` just to be safe
